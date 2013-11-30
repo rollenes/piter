@@ -1,0 +1,10 @@
+---
+source: ./source
+destination: ./public
+
+url: http://rewolucje.local
+
+include: [./assets/]
+
+---
+
