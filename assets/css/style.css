@@ -8,29 +8,105 @@ body {
   height: auto;
   margin: 0 auto -100px;
   padding: 0 0 100px;
+  background-image: url('../img/bg.png');
 }
 
-h1.page-header {
-	border-bottom-color: #fce865;
+a {
+    color: #777;
+}
+
+.header {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.14)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.14) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0.14) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.14) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.14) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+    border-bottom: 5px solid #f7b808;
 }
 
 .header a.logo {
+    display: block;
+    background-color: #fff;
 	text-decoration: none;
+    padding: 29px 10px 29px;
+}
+
+.col-lg-3,
+.col-lg-9 {
+    padding: 0;
+}
+
+.pip-nav li {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 88%, rgba(0,0,0,0.24) 95%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(88%,rgba(0,0,0,0)), color-stop(95%,rgba(0,0,0,0.24)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 88%,rgba(0,0,0,0.24) 95%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 88%,rgba(0,0,0,0.24) 95%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 88%,rgba(0,0,0,0.24) 95%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 88%,rgba(0,0,0,0.24) 95%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.pip-nav li a {
+    font-size: 120%;
+    padding: 10px 15px 14px;
+}
+
+.pip-nav {
+    border-right: 1px solid #f7b808;
+    padding-bottom: 40px;
+}
+
+.pip-nav li.active a {
+    color: #000000;
+    background: url(../img/active.png) no-repeat top right !important;
+}
+
+.pip-nav li a:hover {
+    color: #f7b808;
+    background: none;
 }
 
 #footer {
 	font-size: 87%;
 	height: 100px;
-	text-align: center;
+    border-top: 4px solid #f7b808;
+
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.23) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.23))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.23) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.23) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.23) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.23) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#3b000000',GradientType=0 ); /* IE6-9 */
+
 }
 
 .pip-foot {
-	padding-top: 20px;
-	border-top: 1px solid #fce865;
+	padding-top: 30px;
+    font-size: 120%;
+    font-weight: bold;
 }
 
-.content {
-	margin-bottom: 20px; 
+.pip-foot a {
+    color: #fff;
+}
+
+.gallery-links {
+    margin: 20px 0;
+}
+
+.gallery-links a {
+    line-height: 115px;
+}
+
+.thumb-img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 #footer a {
@@ -39,34 +115,4 @@ h1.page-header {
 
 #footer .copyright {
 	padding-top: 10px;
-}
-
-@media(max-width: 640px) {
-	.header .page-header {
-		margin-top: 10px;
-	}
-
-}
-
-@media(min-width: 768px) {
-	
-	.pip-nav {
-		margin-top: 157px;
-	}
-	
-	#footer .copyright {
-		padding-top: 30px;
-	}
-}
-
-@media(min-width: 1024px) {
-	
-	#wrap {
-		margin: 0 auto -80px;
-		padding: 0 0 80px;
-	}
-
-	#footer {
-		height: 80px;
-	}
 }

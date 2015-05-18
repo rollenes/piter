@@ -4,59 +4,71 @@
 		<title>{{page.title}}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-image-gallery.min.css">
 		<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="assets/js/bootstrap-image-gallery.min.js"></script>
 	</head>
 	<body>
-		
 		<div id="wrap">
 			<div class="header">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-4">
-							<a class="logo" href="index.html">
-								<h1 class="page-header text-center">
-									<img src="assets/img/logo.jpg"><br>
-									<small>Piotra i Pawła</small>
-								</h1>
-							</a>
-						</div>
-						<div class="col-sm-7">
-							<ul class="nav nav-pills nav-justified pip-nav">
-								<li{% if page.active == "oferta" %} class="active" {% endif %}><a href="oferta.html">Oferta</a></li>
-								<li{% if page.active == "galeria" %} class="active" {% endif %}><a href="galeria.html">Galeria</a></li>
-								
-								<li{% if page.active == "cennik" %} class="active" {% endif %}><a href="cennik.html">Cennik</a></li>
-								<li{% if page.active == "kontakt" %} class="active" {% endif %}><a href="kontakt.html">Kontakt</a></li>
-							</ul>
-						</div>
-					</div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <a class="logo" href="index.html">
+                                    <h1 class="text-center">
+                                        <img src="assets/img/logo.jpg" class="img-responsive">
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="col-lg-9">
+                                <img src="assets/img/1.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div class="content">
 				<div class="container">
-					{{page.content}}
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <ul class="nav nav-link nav-stacked pip-nav text-center">
+                                <li{% if page.active == "ofirmie" %} class="active" {% endif %}><a href="/">O firmie</a></li>
+                                <li{% if page.active == "oferta" %} class="active" {% endif %}><a href="oferta.html">Oferta</a></li>
+                                <li{% if page.active == "galeria" %} class="active" {% endif %}><a href="galeria.html">Galeria</a></li>
+
+                                <li{% if page.active == "kontakt" %} class="active" {% endif %}><a href="kontakt.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8">
+					        {{page.content}}
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</div>
 		<div id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 text-center">
+                    <div class="col-lg-4 copyright">
+                        <small>
+                            Copyright &copy; 2015 &nbsp; Remontowe Rewolucje
+                        </small>
+                    </div>
+					<div class="col-lg-8 text-center">
 						<div class="pip-foot">
-							<a href="oferta.html">Remontowe rewolucje</a>
+							<a href="/">O firmie</a>
 							<a href="oferta.html">Oferta</a>
 							<a href="galeria.html">Galeria</a>
-							<a href="referencje.html">Referencje</a>
-							<a href="cennik.html">Cennik</a>
 							<a href="kontakt.html">Kontakt</a>						
 						</div>
 					</div>
-					<div class="col-sm-7 copyright">
-						<small>
-						Copyright &copy; 2013 &nbsp; Remontowe Rewolucje Piotra i Pawła
-						</small>
-					</div>
+
 				</div>
 			</div>
 		</div>
