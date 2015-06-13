@@ -1,14 +1,7 @@
 html,
 body {
-  height: 100%;
-}
-
-#wrap {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -100px;
-  padding: 0 0 100px;
-  background-image: url('../img/bg.png');
+    height: 100%;
+    background-image: url('../img/bg.png');
 }
 
 a {
@@ -32,6 +25,15 @@ a {
     background-color: #fff;
 	text-decoration: none;
     padding: 29px 10px 29px;
+}
+
+.content {
+    padding-bottom: 100px;
+    background: #fff;
+    box-shadow: 0 0 20px #000;
+    -webkit-box-shadow: 0 0 20px #000;
+    -moz-box-shadow: 0 0 20px #000;
+    -ms-box-shadow: 0 0 20px #000;
 }
 
 .col-lg-3,
@@ -114,5 +116,5 @@ a {
 }
 
 #footer .copyright {
-	padding-top: 10px;
+	padding-top: 37px;
 }
